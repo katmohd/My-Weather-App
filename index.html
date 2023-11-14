@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="src/styles.css" />
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
+    <title>🌤️ My Weather App</title>
+</head>
+
+<body>
+    <div id="background" class="container">
+        <header>
+            <form id="search-form">
+                <input type="search" id="search-input" placeholder="Enter a city.." autocomplete="off" autofocus="on"
+                    required />
+                <input type="submit" id="search-button" value="Search" />
+            </form>
+        </header>
+
+        <main>
+            <div class="current-weather">
+                <div class="current-temp">
+                    <span id="current-temp-icon">
+                        <img src="https://shecodes-assets.s3.amazonaws.com/api/weather/icons/few-clouds-day.png"
+                            alt="weather icon" />
+                    </span>
+                    <br />
+                    <span id="current-temp-value">32</span><span id="current-temp-unit">°C</span><br />
+                </div>
+                <div class="current-details">
+                    <span id="current-city">
+                        Kuala Lumpur
+                    </span>
+                    <br />
+                    <span id="#current-date">
+                        Saturday 15:32
+                    </span>
+                    <br />
+                    <span id="description">
+                        Partly cloudy
+                    </span>
+                    <br />
+                    Humidity: <strong><span id="humidity">82</span>%</strong> <br />
+                    Wind: <strong><span id="wind">13</span> km/h</strong>
+                </div>
+            </div>
+
+            <div class="forecast">
+                <div class="row days">
+                    <div class="col-2 sun">
+                        Sun
+                        <br />
+                        <span class="material-symbols-outlined">
+                            rainy
+                        </span>
+                        <br />
+                        <span class="temp-highest">
+                            32°C
+                        </span>
+                        <span class="temp-lowest">
+                            24°C
+                        </span>
+                    </div>
+                    <div class="col-2 mon">
+                        Mon
+                        <br />
+                        <span class="material-symbols-outlined">
+                            thunderstorm
+                        </span>
+                        <br />
+                        <span class="temp-highest">
+                            32°C
+                        </span>
+                        <span class="temp-lowest">
+                            24°C
+                        </span>
+                    </div>
+                    <div class="col-2 tue">
+                        Tue
+                        <br />
+                        <span class="material-symbols-outlined">
+                            cloud
+                        </span>
+                        <br />
+                        <span class="temp-highest">
+                            32°C
+                        </span>
+                        <span class="temp-lowest">
+                            24°C
+                        </span>
+                    </div>
+                    <div class="col-2 wed">
+                        Wed
+                        <br />
+                        <span class="material-symbols-outlined">
+                            sunny
+                        </span>
+                        <br />
+                        <span class="temp-highest">
+                            31°C
+                        </span>
+                        <span class="temp-lowest">
+                            24°C
+                        </span>
+                    </div>
+                    <div class="col-2 thu">
+                        Thu
+                        <br />
+                        <span class="material-symbols-outlined">
+                            partly_cloudy_day
+                        </span>
+                        <br />
+                        <span class="temp-highest">
+                            31°C
+                        </span>
+                        <span class="temp-lowest">
+                            24°C
+                        </span>
+                    </div>
+                    <div class="col-2 fri">
+                        Fri
+                        <br />
+                        <span class="material-symbols-outlined">
+                            thunderstorm
+                        </span>
+                        <br />
+                        <span class="temp-highest">
+                            32°C
+                        </span>
+                        <span class="temp-lowest">
+                            24°C
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <footer class="about-me">
+            This project was coded by
+            <a href="https://github.com/katmohd" target="_blank">Kat</a>
+            and is on
+            <a href="https://github.com/katmohd/My-Weather-App" target="_blank">GitHub</a>
+            and hosted on
+            <a href="https://velvety-starship-5174cd.netlify.app/" target="_blank">Netlify</a>
+        </footer>
+    </div>
+    <script type="module" src="src/index.js"></script>
+</body>
+
+</html>
